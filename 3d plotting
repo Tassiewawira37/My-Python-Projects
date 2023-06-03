@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits import mplot3d
+
+#define the axes
+ax = plt.axes(projection = '3d')
+#plt.show()
+
+#z = np.linspace(0,30,100)
+#x = np.sin(z)
+#y = np.cos(z)
+
+def z function(x,y):
+    return np.sin(np.sqrt(x**2 + y**2))
+
+#Not finished
+ax.plot3D(x,y,z)
+
+plt.show()
