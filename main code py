@@ -1,0 +1,13 @@
+#Plottin functions with matplotlib
+import numpy as np
+import matplotlib.pyplot as plt
+
+#Define a range of x and y values
+x = np.arange (-100,100,1)
+y = 0.5*x**2 + 2*x
+y2 = np.tan(x)
+#combining the array of x values and y values then plotting them
+plt.plot(x,y,'ys')
+plt.plot(x,y2)
+plt.show()
+
