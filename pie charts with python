@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+
+nationalities = ['American','German','French','Other']
+students = [60,23,21,34]
+
+#to explode a portion of the piechart
+#explode = [0,0,0.2,0]
+
+#Changing the order of list.
+pairs = zip (students,nationalities)
+print (list(pairs))
+students,nationalities = zip(*pairs)
+plt.pie(students, labels = nationalities, autopct = '%2f%%')
+plt.show()
