@@ -1,0 +1,9 @@
+#library that allows us to manipulate data. Offers us with 2 data structures:
+#has rows and columns.
+
+import pandas as pd
+import matplotlib.pyplot as plt
+#a series is a 2 column table. has values and indices
+
+series = pd.series([10,20,30,40],['A','B','C','D'])
+print(series)
