@@ -1,0 +1,22 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+#creating a data frame,create a abasic dictionary
+
+data = {
+    'SSN' : [123,445,511,872],
+    'Name':['Anna','Bob','John','Mike'],
+    'Age' :[29,43,82,23],
+    'Height': [176,165,187,182],
+    'Gender': ['f','m','m','m']
+}
+
+df = pd.DataFrame(data)
+df.set_index('SSN', inplace=True)
+#gives no of units
+print(df.count())
+#sum function
+print (df.sum())
+#to get mean/median  print(df['Height'].mean/median/std/max/min/describe())
+#gives a summary of the whole data
+print(df.describe())
