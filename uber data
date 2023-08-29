@@ -1,0 +1,6 @@
+
+import pandas as pd
+import seaborn
+
+data = pandas.read_csv('C:\C\User\Jossy\Desktop\Data Science\uber-raw-data-apr14.csv')
+print(data)
